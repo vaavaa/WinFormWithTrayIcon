@@ -181,7 +181,7 @@ namespace WinFormWithTrayIcon
             this.txtGlobalTime.Text = accurateTime.ToString();
             Global.timesSystem[0] = localtime;
             Global.timesSystem[1] = accurateTime.Value;
-            //Global.times[2] = 
+            this.txtProgramTime.Text = Global.timesSet[2].ToString();
         }
 
 
@@ -261,9 +261,8 @@ namespace WinFormWithTrayIcon
             {
                 if (this.time3.Text.Length != 12)
                 {
-                    checkBox3.Checked = false;
                     MessageBox.Show("Необходимо ввести полное время запуска.", "Внимание");
-                    return;
+                    checkBox3.Checked = false;
                 }
                 else
                 {

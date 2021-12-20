@@ -12,6 +12,7 @@ namespace WinFormWithTrayIcon
         public static Logger _log = new Logger(500u);
         public static List<Color> _logColors = new List<Color> { Color.Red, Color.SkyBlue, Color.Green };
         public static bool[] KeepCycleOn = { false };
+        //Время систем
         public static List<DateTime> timesSystem = new List<DateTime> {
             new DateTime(2021, 12, 19, 21, 33, 0, 0), //Локальное время - 0
             new DateTime(2021, 12, 19, 21, 33, 0, 0), //Глобальное время - 1

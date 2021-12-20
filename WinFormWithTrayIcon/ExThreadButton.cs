@@ -42,7 +42,9 @@ namespace WinFormWithTrayIcon
                 {
                     try
                     {
-                        Window window = desktop.FindFirstDescendant(f => f.ByName("Вход в систему")).AsWindow();
+                        Window window = desktop.FindFirstDescendant(f => f.ByClassName("RTS Plaza Workstation 1.96.1.15")).AsWindow();
+                        var bar = window.FindAllDescendants(f => f.ByClassName("RTS Plaza Workstation 1.96.1.15"));
+                        Global.timesSystem[2] = DateTime.Now;
                     }
                     catch (NullReferenceException ex)
                     {
